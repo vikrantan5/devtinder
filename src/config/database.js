@@ -125,11 +125,11 @@
 
 
 
-const mongoose = require("mongoose");
+const mongoose = require(process.env.MONGODB_URI);
 
 
 const connectToDB = async()=>{
-mongoose.connect("mongodb+srv://e-com:uuzMOgmCK2ciBDaa@cluster0.8fq8yez.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/devtinder");
+mongoose.connect("");
 
 }
 

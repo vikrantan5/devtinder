@@ -80,7 +80,7 @@ const userAuth = async(req , res , next)=>{
 
 
     //validate the token
-   const decodedUser =  jwt.verify(token , "Vik4an5@#Devtinder")
+   const decodedUser =  jwt.verify(token , process.env.JWT_SECRET)
 
     if(!decodedUser){
       return  res.status(401).send("Unauthorized request invalid token")
