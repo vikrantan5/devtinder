@@ -125,11 +125,11 @@
 
 
 
-const mongoose = require(process.env.MONGODB_URI);
+const mongoose = require("mongoose");
 
 
 const connectToDB = async()=>{
-mongoose.connect("");
+mongoose.connect(process.env.MONGODB_URI);
 
 }
 
